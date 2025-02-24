@@ -261,22 +261,24 @@ html {
 .cardOverlayContainer>.cardOverlayFab-primary:hover,
 .listItemImageButton:hover {
     color: white;
-}
+}/*
 
 .layout-desktop .cardOverlayButton-br {
-    display: none;
+    display: true;
 }
+*/
 
 .layout-mobile .cardOverlayButton {
     padding: .425em;
 }
 
+/*
 .layout-mobile .portraitCard .cardOverlayButton-br,
 .layout-mobile .backdropCard .cardOverlayButton-br,
-.layout-mobile .cardOverlayButton-br[data-action="menu"] {
+//.layout-mobile .cardOverlayButton-br[data-action="menu"] {
     display: none;
 }
-
+*/
 .cardOverlayContainer:has(.cardOverlayButton:hover) {
     backdrop-filter: var(--blurDefault);
 }
@@ -399,11 +401,11 @@ html {
         width: 46%;
     }
 }
-
+/*
 .detailLogo {
     display: none;
 }
-
+*/
 .detailPageWrapperContainer {
     padding-top: unset;
     margin-top: unset;
@@ -444,16 +446,17 @@ html {
 .layout-desktop .detailPageSecondaryContainer {
     background-color: transparent;
 }
-
+/*
 .headerHomeButton {
     display: none;
 }
-
+*/
 /* hide sync button on home screen */
+/*
 .skinHeader.noHomeButtonHeader .headerSyncButton {
     display: none;
 }
-
+*/
 .pageTitle {
     height: 1.5em;
 }
@@ -1010,21 +1013,22 @@ progress+span {
 }
 
 .itemTags,
+/*
 .itemTags>a {
     display: none;
     font-size: unset !important;
     font-weight: 200;
 }
-
+*/
 .detail-clamp-text {
     text-align: start;
     color: var(--dimTextColor);
 }
-
+/*
 .itemMiscInfo {
     align-items: flex-end !important;
 }
-
+*/
 .innerCardFooter,
 .chapterThumbTextContainer {
     background: transparent;
@@ -1528,11 +1532,11 @@ div[data-role=controlgroup] a.ui-btn-active {
 .actionSheetMenuItem.emby-button:has(.listItemIcon.material-icons.check) .listItemBodyText {
     color: white;
 }
-
+/*
 .actionSheetMenuItem.emby-button:has(.listItemIcon.material-icons.check) .listItemIcon.material-icons.check {
     display: none;
 }
-
+*/
 .actionSheetMenuItem.emby-button:has(.listItemIcon.material-icons.check[style*="hidden"]) {
     background-color: transparent;
 }
@@ -2006,11 +2010,11 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
 .progressring-spiner {
     border-color: var(--uiAccentColor);
 }
-
+/*
 .skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred.semiTransparent.noHeaderRight {
     display: none;
 }
-
+*/
 #loginPage {
     padding-top: 20em !important;
 }
@@ -2072,12 +2076,12 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
     background-position: center;
     background-repeat: no-repeat;
 }
-
+/*
 .manualLoginForm .sectionTitle,
 .visualLoginForm>h1 {
     display: none;
 }
-
+*/
 .manualLoginForm::before,
 .visualLoginForm::before {
     content: var(--loginPageText);
@@ -2129,11 +2133,12 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
     font-family: 'Noto Sans';
     text-align: center;
 }
-
+/*
 #indexPage:not(.hide) .card-withuserdata[data-isfolder="true"]:not([data-type="PhotoAlbum"], [data-type="Series"], [data-type="Folder"], [data-type="Season"], [data-type="Playlist"]) .cardText-first,
 #indexPage:not(.hide) .card-withuserdata[data-isfolder="true"]:not([data-type="PhotoAlbum"], [data-type="Series"], [data-type="Folder"], [data-type="Season"], [data-type="Playlist"]) .cardText.cardTextCentered {
     display: none;
 }
+*/
 
 /* input[type="radio"]:checked {
     background-color: var(--highlightOutlineColor);
