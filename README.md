@@ -10,7 +10,7 @@ This is a Jellyfin theme inspired from JellySeerr to improve the overall look an
 ### ✨ Key Features  
 - modern layouts and colors
 - new animations on some elements
-- reduced clutter by hiding unimportant buttons and elements
+~~- reduced clutter by hiding unimportant buttons and elements~~ restored icons to repair core functionality and to ease navigation.
 - overall rounded design
 - stylish borders, hover effects and shadows
 - various fixes to the user experience
