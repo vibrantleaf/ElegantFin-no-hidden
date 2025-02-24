@@ -240,11 +240,11 @@ html {
     background-color: rgba(0, 0, 0, 0.75) !important;
     color: unset;
 }
-
+/*
 .layout-desktop .cardOverlayButton-br {
     display: none;
 }
-
+*/
 .layout-mobile .cardOverlayButton {
     padding: .425em;
 }
@@ -254,13 +254,13 @@ html {
     border-color: rgba(23, 23, 23, 0.6);
     backdrop-filter: var(--blurSmallest);
 }
-
+/*
 .layout-mobile .portraitCard .cardOverlayButton-br,
 .layout-mobile .backdropCard .cardOverlayButton-br,
 .layout-mobile .cardOverlayButton-br[data-action="menu"] {
     display: none;
 }
-
+*/
 .cardOverlayContainer:has(.cardOverlayButton:hover) {
     backdrop-filter: var(--blurDefault);
 }
@@ -379,11 +379,11 @@ html {
         width: 46%;
     }
 }
-
+/*
 .detailLogo {
     display: none;
 }
-
+*/
 .detailPageWrapperContainer {
     padding-top: unset;
     margin-top: unset;
@@ -424,16 +424,17 @@ html {
 .layout-desktop .detailPageSecondaryContainer {
     background-color: transparent;
 }
-
+/*
 .headerHomeButton {
     display: none;
 }
-
+*/
 /* hide sync button on home screen */
+/*
 .skinHeader.noHomeButtonHeader .headerSyncButton {
     display: none;
 }
-
+*/
 .pageTitle {
     height: 1.5em;
 }
@@ -876,11 +877,13 @@ progress+span {
 .itemExternalLinks {
     color: var(--textColor);
 }
-
+/
 .itemTags,
 .itemTags>a {
+    /*
     display: none;
     font-size: unset !important;
+    */
     font-weight: 200;
 }
 
@@ -901,11 +904,11 @@ progress+span {
     padding: 1em;
     width: auto;
 }
-
+/*
 .centerMessage {
     width: unset;
 }
-
+*/
 .dialog {
     backdrop-filter: var(--blurDefault);
     background-color: var(--drawerColor);
@@ -1392,11 +1395,11 @@ div[data-role=controlgroup] a.ui-btn-active {
 .actionSheetMenuItem.emby-button:has(.listItemIcon.material-icons.check) {
     background-color: var(--activeColor);
 }
-
+/*
 .actionSheetMenuItem.emby-button:has(.listItemIcon.material-icons.check) .listItemIcon.material-icons.check {
     display: none;
 }
-
+*/
 .actionSheetMenuItem.emby-button:has(.listItemIcon.material-icons.check[style*="hidden"]) {
     background-color: transparent;
 }
@@ -1551,11 +1554,11 @@ div[data-role=controlgroup] a.ui-btn-active {
 .dashboardSection .sectionTitleTextButton>.material-icons.material-icons {
     font-size: unset;
 }
-
+/*
 .sectionTitleTextButton>.material-icons::before {
     display: none;
 }
-
+*/
 .sectionTitleTextButton>.material-icons.chevron_right {
     margin-left: .5rem !important;
     height: 1.5rem;
@@ -1887,11 +1890,11 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
 .progressring-spiner {
     border-color: var(--btnSubmitBorderColor);
 }
-
+/*
 .skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred.semiTransparent.noHeaderRight {
     display: none;
 }
-
+*/
 #loginPage {
     padding-top: 20em !important;
 }
@@ -1953,12 +1956,12 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
     background-position: center;
     background-repeat: no-repeat;
 }
-
+/*
 .manualLoginForm .sectionTitle,
 .visualLoginForm>h1 {
     display: none;
 }
-
+*/
 .manualLoginForm::before,
 .visualLoginForm::before {
     content: var(--loginPageText);
@@ -2010,12 +2013,12 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
     font-family: 'Noto Sans';
     text-align: center;
 }
-
+/*
 .card-withuserdata[data-isfolder="true"]:not([data-type="PhotoAlbum"], [data-type="Series"], [data-type="Folder"], [data-type="Season"], [data-type="Playlist"]) .cardText-first,
 .card-withuserdata[data-isfolder="true"]:not([data-type="PhotoAlbum"], [data-type="Series"], [data-type="Folder"], [data-type="Season"], [data-type="Playlist"]) .cardText.cardTextCentered {
     display: none;
 }
-
+*/
 .padded-right-withalphapicker .card-withuserdata[data-isfolder="true"]:not([data-type="PhotoAlbum"], [data-type="Series"], [data-type="Folder"], [data-type="Season"], [data-type="Playlist"]) {
     margin-bottom: -1.5em;
 }
@@ -2095,19 +2098,19 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
     background-color: var(--textColor);
     background-size: contain !important;
 }
-
+/*
 .playlistIndexIndicatorImage.defaultCardBackground .audiotrack {
     display: none;
 }
-
+*/
 #dialogToc {
     background-color: rgba(0, 0, 0, 0.5);
-    max-height: unset;
-    max-width: unset;
+    /* max-height: unset; */
+    /* max-width: unset; */
 }
 
 #dialogToc .toc li {
-    font-size: unset;
+    /* font-size: unset; */
     font-weight: 600;
     list-style-type: circle;
     margin-bottom: .5em;
