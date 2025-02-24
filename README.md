@@ -3,7 +3,7 @@ This is a Jellyfin theme inspired from JellySeerr to improve the overall look an
 
 
 #### **Author:** [lscambo13](https://github.com/lscambo13)
-##### **Fork Author:** [vibrantleaf](https://github.com/vibrantleaf/ElegantFin-no-hidden)
+##### **Fork Author:** [vibrantleaf](https://github.com/vibrantleaf/)
 
 <hr>
 
@@ -47,7 +47,7 @@ This is a Jellyfin theme inspired from JellySeerr to improve the overall look an
 
 ### 🧩 How to customise this theme? 
 - Documentation yet to be added. Help needed.
-- [Experimental add-ons](https://github.com/lscambo13/ElegantFin/blob/main/Add-Ons.md)
+- [Experimental add-ons](https://github.com/vibrantleaf/ElegantFin-no-hidden/blob/main/Add-Ons.md)
 
 <hr>
 
@@ -60,7 +60,7 @@ This is a Jellyfin theme inspired from JellySeerr to improve the overall look an
 
 ### 🛠️ Troubleshooting 
 <details>
-  <summary>1️⃣ - <i>How do I check if I am using the latest version on ElegantFin?</i></summary>
+  <summary>1️⃣ - <i>How do I check if I am using the latest version on ElegantFin-no-hidden?</i></summary>
 
 - To make sure that you are using the latest version of ElegantFin, check the version number at the bottom in the Dashboard screen. 
 - It should be something like ElegantFin v24.12.XX
@@ -86,8 +86,8 @@ This is a Jellyfin theme inspired from JellySeerr to improve the overall look an
 <details>
   <summary>4️⃣ - <i>How do I report bugs/issues?</i></summary>
 
-- First check [here](https://github.com/lscambo13/ElegantFin/issues?q=) whether a similar issue has been reported already. If it exists, upvote and comment there to let me know. 
-- Alternatively, create a new issue [here](https://github.com/lscambo13/ElegantFin/issues/new/choose).
+- First check [here](https://github.com/vibrantleaf/ElegantFin-no-hidden/issues?q=) whether a similar issue has been reported already. If it exists, upvote and comment there to let me know. 
+- Alternatively, create a new issue [here](https://github.com/vibrantleaf/ElegantFin-no-hidden/issues/new/choose).
 
 
 </details>
