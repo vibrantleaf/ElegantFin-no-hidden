@@ -1,8 +1,8 @@
 # ElegantFin-no-hidden Theme
-This is a Jellyfin theme inspired from JellySeerr to improve the overall look and experience with various fixes to the UI and behaviour. forked to reenable the hidden icons 
+This is a Jellyfin theme inspired from JellySeerr to improve the overall look and experience with various fixes to the UI and behaviour. soft-forked to reenable the hidden icons 
 
 
-#### **Author:** [lscambo13](https://github.com/lscambo13)
+#### **Original Author:** [lscambo13](https://github.com/lscambo13)
 ##### **Fork Author:** [vibrantleaf](https://github.com/vibrantleaf/)
 
 <hr>
@@ -62,8 +62,8 @@ This is a Jellyfin theme inspired from JellySeerr to improve the overall look an
 <details>
   <summary>1️⃣ - <i>How do I check if I am using the latest version on ElegantFin-no-hidden?</i></summary>
 
-- To make sure that you are using the latest version of ElegantFin, check the version number at the bottom in the Dashboard screen. 
-- It should be something like ElegantFin v24.12.XX
+- To make sure that you are using the latest version of ElegantFin-no-hidden, check the version number at the bottom in the Dashboard screen. 
+- It should be something like ElegantFin-no-hidden v24.12.XX
 </details>
 
 <details>

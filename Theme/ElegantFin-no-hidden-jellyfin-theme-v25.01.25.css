@@ -2,7 +2,7 @@
 
 /* Add-ons: Uncomment to enable */
 /* @import url("https://cdn.jsdelivr.net/gh/lscambo13/ElegantFin@main/Theme/assets/add-ons/custom-media-covers-latest-min.css"); */
-/* @import url(./assets/add-ons/custom-media-covers-nightly.css); */
+/* @import url(./assets/add-ons/custom-media-covers-v25.01.25.css); */
 
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
@@ -15,7 +15,7 @@
 }
 
 :root {
-    --elegantFinFooterText: "ElegantFin Nightly";
+    --elegantFinFooterText: "ElegantFin-no-hidden v25.01.25";
     --darkerGradientPoint: #111827;
     --darkerGradientPointAlpha: rgba(17, 24, 39, 0.85);
     --lighterGradientPoint: #1d2635;
@@ -33,13 +33,9 @@
     --highlightOutlineColor: rgb(37, 99, 235);
     --textColor: rgb(209, 213, 219);
     --dimTextColor: rgb(156, 163, 175);
-    --activeColorAlpha: rgba(119, 91, 244, 0.9);
-    --activeColor: rgb(119, 91, 244);
+    --activeColorAlpha: rgba(144, 81, 169, 0.4);
+    --activeColor: rgb(144, 81, 169);
     --tableBodyColor: rgb(31 41 55 / 1);
-    --uiAccentColor: rgb(117 111 226);
-    --btnMiniPlayColor: rgb(41 154 93);
-    /* --btnMiniPlayColor: rgb(32, 32, 32); */
-    --btnPlayBorderColor: color-mix(in srgb, var(--btnMiniPlayColor), rgb(255, 255, 255) 5%);
     --backgroundGradient: linear-gradient(0deg, var(--darkerGradientPoint) 35%, var(--lighterGradientPoint));
     --cardBackgroundGradient: linear-gradient(0deg, var(--darkerGradientPoint), var(--lighterGradientPoint) 25%);
     --hoverGradientA: linear-gradient(130deg, rgb(255 255 255 / 35%) 20%, rgb(255 255 255 / 15%) 40%);
@@ -62,23 +58,6 @@
     --blurLarge: blur(10px);
     --blurLargest: blur(20px);
 }
-
-/* div {
-    transition: opacity .1s ease, transform .1s ease, display .1s ease allow-discrete;
-}
-
-div.hide {
-    opacity: 0;
-    transform: scale(1.25);
-    display: none !important;
-}
-
-
-@starting-style {
-    div.hide {
-        opacity: 1;
-    }
-} */
 
 html {
     font-family: "Inter", serif;
@@ -249,33 +228,36 @@ html {
 }
 
 .cardOverlayContainer>.cardOverlayFab-primary,
-.listItemImageButton,
-.layout-mobile .cardOverlayButton-br>.cardOverlayButtonIcon {
-    background-color: var(--btnMiniPlayColor) !important;
-    color: white;
-    border: var(--defaultLighterBorder);
-    border-color: var(--btnPlayBorderColor);
+.listItemImageButton {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: var(--textColor);
+    border: var(--defaultBorder);
     font-size: 75%;
 }
 
 .cardOverlayContainer>.cardOverlayFab-primary:hover,
 .listItemImageButton:hover {
-    color: white;
-}/*
-
+    background-color: rgba(0, 0, 0, 0.75) !important;
+    color: unset;
+}
+/*
 .layout-desktop .cardOverlayButton-br {
-    display: true;
+    display: none;
 }
 */
-
 .layout-mobile .cardOverlayButton {
     padding: .425em;
 }
 
+.layout-mobile .cardOverlayButton-br>.cardOverlayButtonIcon {
+    border: var(--defaultLighterBorder);
+    border-color: rgba(23, 23, 23, 0.6);
+    backdrop-filter: var(--blurSmallest);
+}
 /*
 .layout-mobile .portraitCard .cardOverlayButton-br,
 .layout-mobile .backdropCard .cardOverlayButton-br,
-//.layout-mobile .cardOverlayButton-br[data-action="menu"] {
+.layout-mobile .cardOverlayButton-br[data-action="menu"] {
     display: none;
 }
 */
@@ -286,10 +268,6 @@ html {
 .listViewUserDataButtons {
     flex-direction: column;
     font-size: x-small;
-}
-
-.listItem-largeImage[data-type="Episode"] .listViewUserDataButtons {
-    font-size: small;
 }
 
 .smallBackdropCard,
@@ -494,11 +472,11 @@ html {
 }
 
 .itemMiscInfo>.mediaInfoItem:not(:first-child, .mediaInfoCriticRating) {
-    /* padding-inline-start: .125em; */
+    padding-inline-start: .125em;
 }
 
 .itemMiscInfo>.mediaInfoItem:not(:last-child) {
-    /* padding-inline-end: .125em; */
+    padding-inline-end: .125em;
 }
 
 .mediaInfoItem {
@@ -512,12 +490,11 @@ html {
 .mediaInfoOfficialRating {
     background: transparent !important;
     font-size: .6em;
-    /* font-family: 'Times New Roman', Times, serif; */
-    font-family: 'Noto Sans', sans-serif;
-    line-height: 1.5em;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: normal;
     transform: translateY(-.15em);
-    /* padding-inline: .5em !important; */
-    /* padding-block: .2em !important; */
+    padding-inline: .5em !important;
+    padding-block: .2em !important;
     font-weight: 600;
     border: var(--defaultBorder);
 }
@@ -719,7 +696,7 @@ html {
 }
 
 .buttonActive {
-    color: var(--uiAccentColor) !important;
+    color: var(--btnSubmitBorderColor) !important;
 }
 
 .itemProgressBar:not(.backgroundProgress, .playbackProgress, .transcodingProgress) {
@@ -733,7 +710,7 @@ html {
 
 .itemProgressBarForeground {
     border-radius: var(--largeRadius);
-    background-color: var(--uiAccentColor);
+    background-color: var(--btnSubmitBorderColor);
 }
 
 .backgroundProgress>div {
@@ -741,16 +718,16 @@ html {
 }
 
 .playbackProgress>div {
-    background-color: var(--uiAccentColor);
+    background-color: var(--btnSubmitBorderColor);
 }
 
 ::-moz-progress-bar {
-    background: var(--uiAccentColor) !important;
+    background: var(--btnSubmitBorderColor) !important;
     border-radius: var(--smallRadius) inherit var(--smallRadius) 0;
 }
 
 ::-webkit-progress-value {
-    background: var(--uiAccentColor) !important;
+    background: var(--btnSubmitBorderColor) !important;
     border-radius: var(--smallRadius) inherit var(--smallRadius) 0;
 }
 
@@ -763,53 +740,7 @@ progress,
 }
 
 progress+span {
-    color: var(--uiAccentColor) !important;
-}
-
-.mdl-spinner__circle {
-    border-color: var(--dimTextColor);
-    border-style: inset;
-}
-
-.mdl-slider-container {
-    height: 1em;
-}
-
-.mdl-slider {
-    height: unset;
-}
-
-.mdl-slider-background-flex-container {
-    backdrop-filter: var(--blurSmallest);
-}
-
-.mdl-slider-background-flex {
-    border-radius: var(--smallRadius);
-}
-
-.mdl-slider-background-lower {
-    background-color: var(--uiAccentColor);
-}
-
-.mdl-slider::-webkit-slider-thumb {
-    background: var(--uiAccentColor);
-}
-
-.mdl-slider::-webkit-slider-thumb {
-    width: .75em !important;
-    height: .75em !important;
-}
-
-.mdl-slider::-moz-range-thumb {
-    background: var(--uiAccentColor);
-}
-
-.sliderMarker.watched {
-    background-color: var(--uiAccentColor);
-}
-
-.iconOsdProgressInner {
-    background: var(--uiAccentColor);
+    color: var(--btnSubmitBorderColor) !important;
 }
 
 .selectLabel {
@@ -860,18 +791,11 @@ progress+span {
 }
 
 
-.btnPlay[title="Play"]>.detailButton-content::after {
-    content: "Play";
-}
-
-.btnPlay[title="Resume"]>.detailButton-content::after {
-    content: "Resume";
-}
-
 .btnPlay>.detailButton-content::after {
     padding-left: .25em;
     padding-right: .5em;
     place-content: center;
+    content: "Play";
 }
 
 .mainDrawer,
@@ -886,7 +810,7 @@ progress+span {
 }
 
 .btnHeaderSave.button-flat {
-    color: var(--uiAccentColor) !important;
+    color: var(--btnSubmitBorderColor) !important;
     gap: 0.3em;
     border-radius: var(--smallRadius);
 }
@@ -953,82 +877,25 @@ progress+span {
 .itemExternalLinks {
     color: var(--textColor);
 }
-
-.itemExternalLinks.focuscontainer-x {
-    color: transparent;
-}
-
-.itemExternalLinks.focuscontainer-x>.button-link {
-    color: var(--textColor);
-    background-color: var(--selectorBackgroundColor);
-    padding: .125em .5em;
-    border-radius: var(--smallerRadius);
-    margin-bottom: .5em;
-}
-
-.layout-mobile .itemExternalLinks.focuscontainer-x>.button-link:hover:not(:active) {
-    color: var(--textColor) !important;
-}
-
-.layout-desktop .itemExternalLinks.focuscontainer-x>a:hover,
-.itemExternalLinks.focuscontainer-x>a:active {
-    background-color: var(--activeColor) !important;
-    color: white !important;
-}
-
-.layout-desktop .itemExternalLinks.focuscontainer-x>a[href*="themoviedb.org"]:hover,
-.itemExternalLinks.focuscontainer-x>a[href*="themoviedb.org"]:active {
-    background-color: rgb(26, 183, 216) !important;
-    color: black !important;
-}
-
-.layout-desktop .itemExternalLinks.focuscontainer-x>a[href*="imdb.com"]:hover,
-.itemExternalLinks.focuscontainer-x>a[href*="imdb.com"]:active {
-    background-color: rgb(226, 182, 22) !important;
-    color: black !important;
-}
-
-.layout-desktop .itemExternalLinks.focuscontainer-x>a[href*="thetvdb.com"]:hover,
-.itemExternalLinks.focuscontainer-x>a[href*="thetvdb.com"]:active {
-    background-color: rgb(108, 213, 145) !important;
-    color: black !important;
-}
-
-.layout-desktop .itemExternalLinks.focuscontainer-x>a[href*="trakt.tv"]:hover,
-.itemExternalLinks.focuscontainer-x>a[href*="trakt.tv"]:active {
-    background-color: rgb(171, 58, 173) !important;
-    color: var(--textColor) !important;
-}
-
-.layout-desktop .itemExternalLinks.focuscontainer-x>a[href*="theaudiodb.com"]:hover,
-.itemExternalLinks.focuscontainer-x>a[href*="theaudiodb.com"]:active {
-    background-color: rgb(99, 153, 204) !important;
-    color: rgb(15, 22, 28) !important;
-}
-
-.layout-desktop .itemExternalLinks.focuscontainer-x>a[href*="musicbrainz.org"]:hover,
-.itemExternalLinks.focuscontainer-x>a[href*="musicbrainz.org"]:active {
-    background-color: rgb(186, 71, 143) !important;
-    color: var(--textColor) !important;
-}
-
+/
 .itemTags,
-/*
 .itemTags>a {
+    /*
     display: none;
     font-size: unset !important;
+    */
     font-weight: 200;
 }
-*/
+
 .detail-clamp-text {
     text-align: start;
     color: var(--dimTextColor);
 }
-/*
+
 .itemMiscInfo {
     align-items: flex-end !important;
 }
-*/
+
 .innerCardFooter,
 .chapterThumbTextContainer {
     background: transparent;
@@ -1037,11 +904,11 @@ progress+span {
     padding: 1em;
     width: auto;
 }
-
+/*
 .centerMessage {
     width: unset;
 }
-
+*/
 .dialog {
     backdrop-filter: var(--blurDefault);
     background-color: var(--drawerColor);
@@ -1438,17 +1305,17 @@ div[data-role=controlgroup] a.ui-btn-active {
 
 .listItem[data-type="Audio"] {
     margin-inline: 1em;
-}
-
-.listItem[data-type="Audio"]:has(.playlistIndexIndicatorImage) .listItemBodyText {
-    color: white;
-    font-weight: 600;
+    /* padding-inline: 1em !important; */
 }
 
 [dir="ltr"] .listItem:not(.actionSheetMenuItem)[data-type="Episode"] .listItemBodyText:not(.secondary) {
     font-size: 1.17em;
     font-weight: 600;
 }
+
+/* .listItemBody {
+    padding: 0;
+} */
 
 .listItemBody>.listItemBodyText:not(.secondary) {
     display: -webkit-box;
@@ -1528,10 +1395,6 @@ div[data-role=controlgroup] a.ui-btn-active {
 .actionSheetMenuItem.emby-button:has(.listItemIcon.material-icons.check) {
     background-color: var(--activeColor);
 }
-
-.actionSheetMenuItem.emby-button:has(.listItemIcon.material-icons.check) .listItemBodyText {
-    color: white;
-}
 /*
 .actionSheetMenuItem.emby-button:has(.listItemIcon.material-icons.check) .listItemIcon.material-icons.check {
     display: none;
@@ -1539,10 +1402,6 @@ div[data-role=controlgroup] a.ui-btn-active {
 */
 .actionSheetMenuItem.emby-button:has(.listItemIcon.material-icons.check[style*="hidden"]) {
     background-color: transparent;
-}
-
-.actionSheetMenuItem.emby-button:has(.listItemIcon.material-icons.check[style*="hidden"]):active {
-    background-color: rgba(255, 255, 255, 0.125);
 }
 
 .navMenuOption {
@@ -1593,26 +1452,6 @@ div[data-role=controlgroup] a.ui-btn-active {
 
 .trackSelectionFieldContainer>.selectArrowContainer {
     top: .5em;
-}
-
-.trackSelectionFieldContainer>label {
-    max-width: 2.75em;
-    background-repeat: no-repeat;
-    color: transparent;
-    transform: scale(.9);
-    /* opacity: .8; */
-}
-
-.selectVideoContainer.trackSelectionFieldContainer>label {
-    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="%23d1d5db" viewBox="0 0 24 24"><g stroke-width="1.5"><path d="M2 12c0-4.7 0-7 1.5-8.5C4.9 2 7.3 2 12 2s7 0 8.5 1.5C22 4.9 22 7.3 22 12s0 7-1.5 8.5C19.1 22 16.7 22 12 22s-7 0-8.5-1.5C2 19.1 2 16.7 2 12Z"/><path stroke-linecap="round" d="M17 2.5v19M7 2.5v19M2.5 7H7m14.5 0H17M2.5 17H7m14.5 0H17M2 12h20"/></g></svg>');
-}
-
-.selectAudioContainer.trackSelectionFieldContainer>label {
-    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="%23d1d5db" viewBox="0 0 24 24"><g stroke-width="1.5"><path d="M9 19a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM21 17a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM9 19V8M21 17V6"/><path stroke-linecap="round" d="m15.7 3.8-4 1.3c-1.3.4-2 .6-2.3 1.2C9 6.8 9 7.5 9 8.9V12l12-4v-.5c0-2.5 0-3.7-.8-4.3-.9-.6-2-.2-4.5.6Z"/></g></svg>');
-}
-
-.selectSubtitlesContainer.trackSelectionFieldContainer>label {
-    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="%23d1d5db" viewBox="0 0 24 24"><g stroke-width="1.5"><path d="M2 12c0-3.8 0-5.7 1.2-6.8C4.3 4 6.2 4 10 4h4c3.8 0 5.7 0 6.8 1.2C22 6.3 22 8.2 22 12s0 5.7-1.2 6.8C19.7 20 17.8 20 14 20h-4c-3.8 0-5.7 0-6.8-1.2C2 17.7 2 15.8 2 12Z"/><path stroke-linecap="round" d="M10 16H6M14 13h4M14 16h-1.5M9.5 13h2M18 16h-1.5M6 13h1"/></g></svg>')
 }
 
 .detailSectionContent {
@@ -1715,11 +1554,11 @@ div[data-role=controlgroup] a.ui-btn-active {
 .dashboardSection .sectionTitleTextButton>.material-icons.material-icons {
     font-size: unset;
 }
-
+/*
 .sectionTitleTextButton>.material-icons::before {
     display: none;
 }
-
+*/
 .sectionTitleTextButton>.material-icons.chevron_right {
     margin-left: .5rem !important;
     height: 1.5rem;
@@ -1764,13 +1603,9 @@ div[data-role=controlgroup] a.ui-btn-active {
 }
 
 @media (hover: hover) and (pointer: fine) {
-    .paper-icon-button-light:hover:not(:disabled, .cardOverlayButton) {
+    .paper-icon-button-light:hover:not(:disabled) {
         color: #fff;
         background-color: rgb(255 255 255 / 5%);
-    }
-
-    .actionSheetMenuItem.emby-button:has(.listItemIcon.material-icons.check[style*="hidden"]):hover {
-        background-color: rgba(255, 255, 255, 0.125);
     }
 
     .emby-select-withcolor:hover:not(.emby-select[disabled], :focus),
@@ -1792,7 +1627,6 @@ div[data-role=controlgroup] a.ui-btn-active {
 
     .button-flat:hover {
         background-color: rgba(255, 255, 255, 0.2);
-        color: white;
     }
 
     .alphaPickerButton:hover {
@@ -1948,6 +1782,52 @@ div[data-role=controlgroup] a.ui-btn-active {
     margin: .25em .5em;
 }
 
+.mdl-spinner__circle {
+    border-color: var(--dimTextColor);
+    border-style: inset;
+}
+
+.mdl-slider-container {
+    height: 1em;
+}
+
+.mdl-slider {
+    height: unset;
+}
+
+.mdl-slider-background-flex-container {
+    backdrop-filter: var(--blurSmallest);
+}
+
+.mdl-slider-background-flex {
+    border-radius: var(--smallRadius);
+}
+
+.mdl-slider-background-lower {
+    background-color: var(--btnSubmitBorderColor);
+}
+
+.mdl-slider::-webkit-slider-thumb {
+    background: var(--btnSubmitBorderColor);
+}
+
+.mdl-slider::-webkit-slider-thumb {
+    width: .75em !important;
+    height: .75em !important;
+}
+
+.mdl-slider::-moz-range-thumb {
+    background: var(--btnSubmitBorderColor);
+}
+
+.sliderMarker.watched {
+    background-color: var(--btnSubmitBorderColor);
+}
+
+.iconOsdProgressInner {
+    background: var(--btnSubmitBorderColor);
+}
+
 .subtitleappearance-preview {
     border-radius: var(--smallRadius);
 }
@@ -2008,7 +1888,7 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
 }
 
 .progressring-spiner {
-    border-color: var(--uiAccentColor);
+    border-color: var(--btnSubmitBorderColor);
 }
 /*
 .skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred.semiTransparent.noHeaderRight {
@@ -2120,11 +2000,11 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
     background: var(--activeColor);
 }
 
-#indexPage:not(.hide) .card-withuserdata[data-isfolder="true"]:not([data-type="PhotoAlbum"], [data-type="Series"], [data-type="Folder"], [data-type="Season"], [data-type="Playlist"]) .cardPadder-overflowBackdrop {
+.card-withuserdata[data-isfolder="true"] .cardPadder-overflowBackdrop {
     padding-bottom: 50%;
 }
 
-.card-withuserdata[data-isfolder="true"]:not([data-type="PhotoAlbum"], [data-type="Series"], [data-type="Folder"], [data-type="Season"], [data-type="Playlist"]) .cardImageContainer.cardContent::before {
+.card-withuserdata[data-isfolder="true"] .cardImageContainer.cardContent::before {
     position: absolute;
     font-size: 3.5vh;
     margin-bottom: .175em;
@@ -2134,11 +2014,14 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
     text-align: center;
 }
 /*
-#indexPage:not(.hide) .card-withuserdata[data-isfolder="true"]:not([data-type="PhotoAlbum"], [data-type="Series"], [data-type="Folder"], [data-type="Season"], [data-type="Playlist"]) .cardText-first,
-#indexPage:not(.hide) .card-withuserdata[data-isfolder="true"]:not([data-type="PhotoAlbum"], [data-type="Series"], [data-type="Folder"], [data-type="Season"], [data-type="Playlist"]) .cardText.cardTextCentered {
+.card-withuserdata[data-isfolder="true"]:not([data-type="PhotoAlbum"], [data-type="Series"], [data-type="Folder"], [data-type="Season"], [data-type="Playlist"]) .cardText-first,
+.card-withuserdata[data-isfolder="true"]:not([data-type="PhotoAlbum"], [data-type="Series"], [data-type="Folder"], [data-type="Season"], [data-type="Playlist"]) .cardText.cardTextCentered {
     display: none;
 }
 */
+.padded-right-withalphapicker .card-withuserdata[data-isfolder="true"]:not([data-type="PhotoAlbum"], [data-type="Series"], [data-type="Folder"], [data-type="Season"], [data-type="Playlist"]) {
+    margin-bottom: -1.5em;
+}
 
 /* input[type="radio"]:checked {
     background-color: var(--highlightOutlineColor);
@@ -2191,49 +2074,23 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
     border-color: transparent;
 }
 
-.layout-desktop .nowPlayingInfoContainer {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 5em;
-    padding: 1em;
-    margin-bottom: 2em;
-    backdrop-filter: var(--blurLargest);
-    border: var(--defaultLighterBorder);
-    z-index: 2;
-    background-color: var(--headerColor);
-    box-shadow: var(--shadow);
-    border-radius: var(--largerRadius);
-    box-sizing: border-box;
-}
-
-.layout-desktop .nowPlayingInfoControls {
-    margin: 0em 2em;
-}
-
-.nowPlayingPageImage {
-    box-shadow: var(--shadow);
-    border-radius: var(--smallRadius);
-}
-
 @media (orientation: portrait) and (max-width: 43em) {
     .nowPlayingInfoContainer {
         height: calc(95% - 4.2em);
     }
 }
 
-.nowPlayingSongName.nowPlayingEpisode {
+.nowPlayingInfoContainerMedia>div:not(.hide) {
     margin-bottom: 1em;
+}
+
+.nowPlayingSongName.nowPlayingEpisode {
     font-size: 1.25em;
     color: var(--textColor);
 }
 
 .nowPlayingAlbum.nowPlayingSeason {
     color: var(--dimTextColor);
-    margin-bottom: .5em;
-}
-
-.nowPlayingArtist.nowPlayingSerie {
-    margin-bottom: .5em;
 }
 
 .playlistIndexIndicatorImage {
@@ -2241,19 +2098,19 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
     background-color: var(--textColor);
     background-size: contain !important;
 }
-
+/*
 .playlistIndexIndicatorImage.defaultCardBackground .audiotrack {
     display: none;
 }
-
+*/
 #dialogToc {
     background-color: rgba(0, 0, 0, 0.5);
-    max-height: unset;
-    max-width: unset;
+    /* max-height: unset; */
+    /* max-width: unset; */
 }
 
 #dialogToc .toc li {
-    font-size: unset;
+    /* font-size: unset; */
     font-weight: 600;
     list-style-type: circle;
     margin-bottom: .5em;
