@@ -2,7 +2,7 @@
 This is a Jellyfin theme inspired from JellySeerr to improve the overall look and experience with various fixes to the UI and behaviour. soft-forked to reenable the hidden icons 
 
 
-#### **Original Author:** [lscambo13](https://github.com/lscambo13) **Fork Author:** [vibrantleaf](https://github.com/vibrantleaf/)
+#### **Original Author:** [lscambo13](https://github.com/lscambo13), **Fork Author:** [vibrantleaf](https://github.com/vibrantleaf/)
 
 <hr>
 
