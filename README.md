@@ -62,7 +62,7 @@ This is a Jellyfin theme inspired from JellySeerr to improve the overall look an
   <summary>1️⃣ - <i>How do I check if I am using the latest version on ElegantFin-no-hidden?</i></summary>
 
 - To make sure that you are using the latest version of ElegantFin-no-hidden, check the version number at the bottom in the Dashboard screen. 
-- It should be something like ElegantFin-no-hidden v24.12.XX
+- It should be something like ElegantFin-no-hidden v25.01.XX
 </details>
 
 <details>
