@@ -149,7 +149,7 @@ This is a Jellyfin add-on that allows you to customise My Media cover arts. This
 	
 - To configure your theme to use the custom images, you'll need to input a URL pointing to an image in variables starting with '--url' and an overlay color in variables starting with '--color'.
 	
-- The ideal Jellyfin cover sizes are `960px x 540px`, and the colors can be in rgb format i.e. `rbg(128, 128, 128)`.
+- The ideal Jellyfin cover sizes are `960px x 540px`, and the colours can be in rgb format i.e. `rbg(128, 128, 128)`.
   
 - Below are all the configurable variables, but you should remove the entries you do not intend to modify:
  

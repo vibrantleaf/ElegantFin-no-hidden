@@ -7,7 +7,7 @@ This is a Jellyfin theme inspired from JellySeerr to improve the overall look an
 <hr>
 
 ### ✨ Key Features  
-- modern layouts and colors
+- modern layouts and colours
 - new animations on some elements
 - ~~reduced clutter by hiding unimportant buttons and elements~~
 - overall rounded design
