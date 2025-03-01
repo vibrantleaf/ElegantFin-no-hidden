@@ -51,9 +51,9 @@ This is a Jellyfin theme inspired from JellySeerr to improve the overall look an
 <hr>
 
 ### 🆗 Tested on 
-- Jellyfin Server v10.10.6
-- Jellyfin Android App v2.6.2
-- Jellyfin Media Player v1.11.1
+- Jellyfin Server v10.10.6 🙂
+- Jellyfin Android App v2.6.2 🙂
+- Jellyfin Media Player v1.11.1 🫤
 
 <hr>
 
